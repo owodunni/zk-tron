@@ -5,7 +5,8 @@
     "build": "run-s build:tsc build:lerna",
     "build:lerna": "lerna run build",
     "build:tsc": "tsc --build tsconfig.build.json",
-    "serve": "cd packages/zk-tron-ui && npm run serve"
+    "serve": "cd packages/zk-tron-ui && npm run serve",
+    "clean": "tsc --build tsconfig.build.json --clean"
   },
   "dependencies": {
     "@zk-tron/contracts": "file:./packages/zk-tron-contracts",
