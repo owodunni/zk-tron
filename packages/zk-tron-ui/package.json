@@ -22,7 +22,8 @@
     "serve:prod": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "@zk-tron/core": "file:../zk-tron-core"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",

@@ -1,5 +1,8 @@
 node_modules
 dist
 
+# lerna
+lerna-debug.log
+
 # ts
 tsconfig.tsbuildinfo

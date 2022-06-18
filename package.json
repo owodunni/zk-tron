@@ -4,10 +4,15 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "build": "lerna run build",
-    "serve": "cd packages/zk-tron-ui && npm run serve",
+    "serve:ui": "cd packages/zk-tron-ui && npm run serve",
+    "serve:tsc": "cd packages/zk-tron-core && npm run serve",
+    "serve": "run-p serve:ui serve:tsc",
     "serve:prod": "cd packages/zk-tron-ui && npm run serve:prod"
   },
   "dependencies": {
     "lerna": "^5.1.4"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
