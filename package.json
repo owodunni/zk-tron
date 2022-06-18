@@ -1,0 +1,8 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.0.0",
+    "nx": "^14.3.6"
+  }
+}
