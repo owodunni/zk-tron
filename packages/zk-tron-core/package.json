@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/owodunni/zk-tron/issues"
   },
+  "dependencies": {
+    "@zk-tron/contracts": "file:../zk-tron-contracts"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

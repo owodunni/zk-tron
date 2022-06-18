@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/packages/zk-tron-core/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/zk-tron-ui/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/zk-tron-contracts/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
