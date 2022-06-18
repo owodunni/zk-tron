@@ -1,8 +1,13 @@
 {
   "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "^5.0.0",
-    "nx": "^14.3.6"
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "build": "lerna run build",
+    "serve": "cd packages/zk-tron-ui && npm run serve",
+    "serve:prod": "cd packages/zk-tron-ui && npm run serve:prod"
+  },
+  "dependencies": {
+    "lerna": "^5.1.4"
   }
 }
