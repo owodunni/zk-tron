@@ -2,7 +2,6 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "postinstall": "lerna bootstrap",
     "build": "lerna run build",
     "serve": "run-p serve:ui serve:core serve:contracts",
     "serve:ui": "cd packages/zk-tron-ui && npm run serve",
@@ -10,11 +9,13 @@
     "serve:contracts": "cd packages/zk-tron-contracts && npm run serve"
   },
   "dependencies": {
-    "lerna": "^5.1.4",
+    "@zk-tron/contracts": "file:./packages/zk-tron-contracts",
     "@zk-tron/core": "file:./packages/zk-tron-core",
-    "@zk-tron/contracts": "file:./packages/zk-tron-contracts"
+    "@zk-tron/ui": "file:./packages/zk-tron-ui"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.7.4",
+    "lerna": "^5.1.4"
   }
 }
