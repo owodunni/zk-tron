@@ -2,11 +2,10 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "lerna run build",
-    "serve": "run-p serve:ui serve:core serve:contracts",
-    "serve:ui": "cd packages/zk-tron-ui && npm run serve",
-    "serve:core": "cd packages/zk-tron-core && npm run serve",
-    "serve:contracts": "cd packages/zk-tron-contracts && npm run serve"
+    "build": "run-s build:tsc build:lerna",
+    "build:lerna": "lerna run build",
+    "build:tsc": "tsc --build tsconfig.build.json",
+    "serve": "cd packages/zk-tron-ui && npm run serve"
   },
   "dependencies": {
     "@zk-tron/contracts": "file:./packages/zk-tron-contracts",

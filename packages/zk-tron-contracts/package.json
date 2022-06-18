@@ -15,10 +15,5 @@
   "bugs": {
     "url": "https://github.com/owodunni/zk-tron/issues"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "serve": "tsc --watch"
-  }
+  "main": "src/index.ts"
 }

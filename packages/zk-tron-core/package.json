@@ -18,10 +18,5 @@
   "dependencies": {
     "@zk-tron/contracts": "file:../zk-tron-contracts"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "serve": "tsc --watch"
-  }
+  "main": "src/index.ts"
 }

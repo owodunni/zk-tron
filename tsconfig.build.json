@@ -2,9 +2,10 @@
   "compilerOptions": {
     "composite": true
   },
+  "files": [],
+  "include": [],
   "references": [
-    { "path": "./packages/wallet-core" },
-    { "path": "./packages/wallet-contracts" },
-    { "path": "./packages/wallet-ui" },
+    { "path": "./packages/zk-tron-core" },
+    { "path": "./packages/zk-tron-contracts" }
   ]
 }
