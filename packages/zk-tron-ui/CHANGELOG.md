@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/owodunni/zk-tron/compare/@zk-tron/ui@0.1.0...@zk-tron/ui@0.1.1) (2022-06-19)
+
+
+### Bug Fixes
+
+* change packages to trigger deploy ([435497d](https://github.com/owodunni/zk-tron/commit/435497d141f118be1b0a207091361b2f67a63153))
+
+
+
+
+
 # [0.1.0](https://github.com/owodunni/zk-tron/compare/@zk-tron/ui@0.1.0-beta.1...@zk-tron/ui@0.1.0) (2022-06-19)
 
 **Note:** Version bump only for package @zk-tron/ui
