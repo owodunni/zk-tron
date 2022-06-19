@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "composite": true
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "./packages/zk-tron-contracts/src/__tests__" },
+    { "path": "./packages/zk-tron-core/src/__tests__" }
+  ]
+}

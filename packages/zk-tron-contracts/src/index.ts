@@ -1,1 +1,1 @@
-export const contracts = "awsome";
+export const contracts = () => "World";

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
-import { hello } from "@zk-tron/core";
-console.log(hello);
+import { core } from "@zk-tron/core";
+console.log(core());
 </script>
 
 <template>

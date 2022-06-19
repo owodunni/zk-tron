@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["esnext"],
+    "types": ["node", "jest"]
+  }
+}

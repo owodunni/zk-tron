@@ -14,4 +14,12 @@ module.exports = {
     "plugin:eslint-comments/recommended",
     "prettier",
   ],
+  overrides: [
+    {
+      files: ["*.js"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
 };

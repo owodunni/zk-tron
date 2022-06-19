@@ -12,7 +12,10 @@
     "lint:prettier": "prettier --check \"packages/**/*.{js,ts,json,vue}\" \"*.{js,json,md}\"",
     "fix": "run-p fix:eslint fix:prettier",
     "fix:eslint": "eslint . --fix --ext .vue,.js,.cjs,.ts",
-    "fix:prettier": "prettier --write \"packages/**/*.{js,ts,json,vue}\" \"*.{js,json,md}\""
+    "fix:prettier": "prettier --write \"packages/**/*.{js,ts,json,vue}\" \"*.{js,json,md}\"",
+    "test": "run-p test:jest test:lerna",
+    "test:jest": "jest --verbose --coverage",
+    "test:lerna": "lerna run test"
   },
   "dependencies": {
     "@zk-tron/contracts": "file:./packages/zk-tron-contracts",
