@@ -5,8 +5,9 @@
     "outDir": "./dist"
   },
   "include": ["src/**/*"],
-  "references": [{
-    "path": "../zk-tron-contracts"
-  }
+  "references": [
+    {
+      "path": "../zk-tron-contracts"
+    }
   ]
 }

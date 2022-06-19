@@ -6,7 +6,13 @@
     "build:lerna": "lerna run build",
     "build:tsc": "tsc --build tsconfig.build.json",
     "serve": "cd packages/zk-tron-ui && npm run serve",
-    "clean": "tsc --build tsconfig.build.json --clean"
+    "clean": "tsc --build tsconfig.build.json --clean",
+    "lint": "run-p lint:prettier lint:eslint",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check \"packages/**/*.{js,ts,json,vue}\" \"*.{js,json,md}\"",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "eslint . --fix",
+    "fix:prettier": "prettier --write \"packages/**/*.{js,ts,json,vue}\" \"*.{js,json,md}\""
   },
   "dependencies": {
     "@zk-tron/contracts": "file:./packages/zk-tron-contracts",
@@ -16,6 +22,20 @@
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "typescript": "^4.7.4",
-    "lerna": "^5.1.4"
+    "lerna": "^5.1.4",
+    "prettier": "^2.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^28.1.1",
+    "jest-config": "^27.5.1",
+    "jest-mock-extended": "^2.0.6",
+    "jest-when": "^3.5.1",
+    "@types/jest": "^28.1.2",
+    "ts-jest": "^28.0.5"
   }
 }
