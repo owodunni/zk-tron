@@ -13,5 +13,11 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm run build
-      - run: npm run test
+      - run: npm run coverage
       - run: npm run lint
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: coverage/cobertura.xml

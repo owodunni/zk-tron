@@ -10,5 +10,7 @@ const getProjects = function () {
 };
 
 module.exports = {
+  coverageDirectory: "<rootDir>/coverage/jest",
+  coverageReporters: ["cobertura", "lcov"],
   projects: getProjects(),
 };
