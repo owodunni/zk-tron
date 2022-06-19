@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/owodunni/zk-tron/compare/@zk-tron/core@0.1.1...@zk-tron/core@0.1.2) (2022-06-19)
+
+
+### Bug Fixes
+
+* add LICENSE.md ([8dafa33](https://github.com/owodunni/zk-tron/commit/8dafa332d8a4bd0ae350d2808839ce96e5939b6e))
+
+
+
+
+
 ## [0.1.1](https://github.com/owodunni/zk-tron/compare/@zk-tron/core@0.1.0...@zk-tron/core@0.1.1) (2022-06-19)
 
 
