@@ -36,4 +36,4 @@ jobs:
             npx lerna version -m "chore(release): publish %s" --conventional-commits --conventional-graduate --create-release github --yes
           fi
 
-          npx lerna publish from-git --yes
+          npx lerna publish from-git --no-verify-access --yes
