@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "setup": "husky install",
     "build": "run-s build:tsc build:lerna",
     "build:lerna": "lerna run build",
     "build:tsc": "tsc --build tsconfig.build.json",
@@ -9,10 +10,10 @@
     "clean": "tsc --build tsconfig.build.json --clean",
     "lint": "run-p lint:prettier lint:eslint",
     "lint:eslint": "eslint . --ext .vue,.js,.cjs,.ts",
-    "lint:prettier": "prettier --check \"packages/**/*.{js,ts,json,vue}\" \"*.{js,json,md}\"",
+    "lint:prettier": "prettier --check .",
     "fix": "run-p fix:eslint fix:prettier",
     "fix:eslint": "eslint . --fix --ext .vue,.js,.cjs,.ts",
-    "fix:prettier": "prettier --write \"packages/**/*.{js,ts,json,vue}\" \"*.{js,json,md}\"",
+    "fix:prettier": "prettier --write .",
     "test": "run-p test:jest test:lerna",
     "test:jest": "jest --verbose --coverage",
     "test:lerna": "lerna run test",
@@ -25,6 +26,8 @@
     "@zk-tron/ui": "file:./packages/zk-tron-ui"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@rushstack/eslint-patch": "^1.1.0",
     "@types/jest": "^28.1.2",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
@@ -35,6 +38,7 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-node": "^11.1.0",
+    "husky": "^8.0.1",
     "jest": "^28.1.1",
     "jest-config": "^27.5.1",
     "jest-mock-extended": "^2.0.6",
