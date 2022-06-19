@@ -1,15 +1,14 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "composite": false,
-    "incremental": false,
-    "jsx": "preserve",
-    "lib": ["esnext", "dom"],
-    "skipLibCheck": true
-  },
-  "include": ["src/**/*"],
+  "files": [],
   "references": [
-    { "path": "./tsconfig.node.json" },
-    { "path": "../zk-tron-core" }
+    {
+      "path": "./tsconfig.config.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
+    }
   ]
 }
