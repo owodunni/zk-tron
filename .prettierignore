@@ -1,3 +1,6 @@
 dist
 coverage
 CHANGELOG.md
+.venv
+artifacts
+.pytest_cache
