@@ -5,9 +5,11 @@
   },
   "scripts": {
     "setup": "husky install",
-    "build": "run-s build:tsc build:lerna",
+    "postinstall": "lerna run postinstall",
+    "build": "run-s build:nile build:tsc build:lerna",
     "build:lerna": "lerna run build",
     "build:tsc": "tsc --build tsconfig.build.json",
+    "build:nile": "cd packages/zk-tron-contracts && npm run compile",
     "serve": "cd packages/zk-tron-ui && npm run serve",
     "clean": "tsc --build tsconfig.build.json --clean",
     "lint": "run-p lint:prettier lint:eslint",
