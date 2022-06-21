@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/owodunni/zk-tron/issues"
   },
-  "main": "src/index.ts"
+  "main": "src/index.ts",
+  "scripts": {
+    "postinstall": "npm run install:python && npm run install:poetry && npm run install:nile",
+    "install:python": "python -m pip install --upgrade poetry",
+    "install:poetry": "poetry install",
+    "install:nile": "poetry run nile install",
+    "compile": "poetry run nile compile",
+    "test": "poetry run nile test",
+    "node": "poetry run nile node"
+  }
 }
