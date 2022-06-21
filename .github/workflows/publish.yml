@@ -16,6 +16,19 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Cache Poetry
+        uses: actions/cache@v3
+        with:
+          path: ~/packages/zk-tron-contracts
+          key: poetry-cache-${{ env.PYTHON_VERSION }}-${{ hashFiles('packages/**/poetry.lock') }}-${{ hashFiles('.github/workflows/*.yml') }}
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-cache-${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.7"
       - uses: actions/setup-node@v3
         with:
           node-version: 14
