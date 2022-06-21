@@ -17,8 +17,7 @@
   },
   "main": "src/index.ts",
   "scripts": {
-    "postinstall": "npm run install:python && npm run install:poetry && npm run install:nile",
-    "install:python": "python -m pip install --upgrade poetry",
+    "postinstall": "npm run install:poetry && npm run install:nile",
     "install:poetry": "poetry install",
     "install:nile": "poetry run nile install",
     "compile": "poetry run nile compile",
