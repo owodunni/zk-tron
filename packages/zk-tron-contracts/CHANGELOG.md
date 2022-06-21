@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/owodunni/zk-tron/compare/@zk-tron/contracts@0.1.2...@zk-tron/contracts@0.2.0) (2022-06-21)
+
+
+### Bug Fixes
+
+* delete generated artifacts from git ([eb2baf1](https://github.com/owodunni/zk-tron/commit/eb2baf154c7aaa81fa61c66cf1e39b987f50d568))
+
+
+### Features
+
+* add cairo-nile as StarkNet development tool ([236202b](https://github.com/owodunni/zk-tron/commit/236202b4658164ffaa150a53feed861c77b8d495))
+
+
+
+
+
 ## [0.1.2](https://github.com/owodunni/zk-tron/compare/@zk-tron/contracts@0.1.1...@zk-tron/contracts@0.1.2) (2022-06-19)
 
 
