@@ -21,7 +21,7 @@
     "install:poetry": "poetry install",
     "install:nile": "poetry run nile install",
     "compile": "poetry run nile compile",
-    "test": "poetry run nile test",
+    "test": "poetry run pytest tests/",
     "node": "poetry run nile node"
   }
 }
